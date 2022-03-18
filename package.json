@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig-build.json",
+    "build:watch": "rimraf dist && tsc -p tsconfig-build.json -w",
+    "postbuild": "copyfiles -u 1 public/**/* dist/static",
     "test": "jest",
     "prepare": "husky install"
   },
