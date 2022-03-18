@@ -1,8 +1,10 @@
 {
-  "name": "node-template",
+  "name": "node-ts-template",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "NodeJS template for building Rest APIs using Typescript, Express and Jest.",
+  "author": "Stephano Balbinot",
+  "license": "GPL-3.0-or-later",
+  "repository": "github:sbalbinot/node-ts-template",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig-build.json",
     "build:watch": "rimraf dist && tsc -p tsconfig-build.json -w",
@@ -14,9 +16,6 @@
     "test:ci": "npm test -- --coverage",
     "prepare": "husky install"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.21",
